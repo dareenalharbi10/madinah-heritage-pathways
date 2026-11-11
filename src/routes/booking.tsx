@@ -5,7 +5,7 @@ import { useLang } from "@/lib/i18n";
 import { tours } from "@/lib/content";
 
 export const Route = createFileRoute("/booking")({
-  validateSearch: (s: Record<string, unknown>): { tour?: string } => ({ tour: typeof s["tour"] === "string" ? s["tour"] : undefined }),
+  validateSearch: (s: Record<string, unknown>): { tour?: string | undefined } => ({ tour: typeof s["tour"] === "string" ? s["tour"] : undefined }),
   head: () => ({
     meta: [
       { title: "الحجز | وجهتك — Book a Tour" },
