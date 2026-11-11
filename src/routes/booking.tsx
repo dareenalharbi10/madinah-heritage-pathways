@@ -5,7 +5,7 @@ import { useLang } from "@/lib/i18n";
 import { tours } from "@/lib/content";
 
 export const Route = createFileRoute("/booking")({
-  validateSearch: (s: Record<string, unknown>): { tour?: string } => ({ tour: typeof s.tour === "string" ? s.tour : undefined }),
+  validateSearch: (s: Record<string, unknown>): { tour?: string } => ({ tour: typeof s["tour"] === "string" ? s["tour"] : undefined }),
   head: () => ({
     meta: [
       { title: "الحجز | وجهتك — Book a Tour" },
@@ -22,10 +22,10 @@ export const Route = createFileRoute("/booking")({
 function Booking() {
   const { t } = useLang();
   const { tour } = Route.useSearch();
-  const [sel, setSel] = useState(tour ?? tours[0].id);
+  const [sel, setSel] = useState<string>(tour ?? "nabawi");
   const [people, setPeople] = useState(1);
   const [done, setDone] = useState(false);
-  const chosen = tours.find((x) => x.id === sel) ?? tours[0];
+  const chosen = tours.find((x) => x.id === sel) ?? tours[0]!;
   return (
     <SiteLayout>
       <PageHeader title={t({ ar: "احجز جولتك", en: "Book your tour" })} />
