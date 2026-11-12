@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Madinah Heritage Pathways
+
+https://madinah-heritage-trail.lovable.app هذي الخطة اللي سويتها أبغاكي تسويها لي موقع وفيها لغة عربيه ولغة إنجليزي يعني أنا اللي اختار أي لغة ابغى
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://madinah-heritage-pathways.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/467dfc2b-de43-424c-8322-7e4ec08be7aa).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
