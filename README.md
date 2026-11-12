@@ -1,6 +1,6 @@
 # Madinah Heritage Pathways
 
-https://madinah-heritage-trail.lovable.app هذي الخطة اللي سويتها أبغاكي تسويها لي موقع وفيها لغة عربيه ولغة إنجليزي يعني أنا اللي اختار أي لغة ابغى
+https://madinah-heritage-trail.lovable.app 
 
 This project was built with [Lovable](https://lovable.dev).
 
